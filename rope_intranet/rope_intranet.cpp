@@ -11,13 +11,10 @@ struct rope{
     int y;
 };
 
-bool comp(const rope &a, const rope &b){
-    return a.x<b.x;
-}
-
 int main(int argc, char *argv[]){
     if(argc!=3){
         cout<<"Usage: "<<argv[0]<<" <input_filename> <output_filename>"<<endl;
+	return -1;
     }
     ifstream infile(argv[1]);
     ofstream outfile(argv[2]);
